@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
@@ -6,7 +6,6 @@ import AboutUs from './components/AboutUs';
 import './App.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
   const cartItemsCount = useSelector(state => state.cart.totalQuantity);
 
   return (
